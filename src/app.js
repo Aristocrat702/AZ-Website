@@ -1,27 +1,5 @@
-export function renderApp() {
+import MainLayout from "./layouts/MainLayout";
 
-    const app = document.querySelector("#app");
-
-    app.innerHTML = `
-
-        <header>
-
-            HEADER
-
-        </header>
-
-        <main>
-
-            HERO
-
-        </main>
-
-        <footer>
-
-            FOOTER
-
-        </footer>
-
-    `;
-
+export default function App() {
+  return <MainLayout />;
 }

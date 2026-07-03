@@ -1,59 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
+    <title>AZ — Digital Engineering System</title>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Маркетинг, аналитика, автоматизация и AI-инструменты для роста бизнеса. AZ — система принятия решений, а не просто услуги." />
 
-    <title>AZ — Интернет-маркетинг нового поколения</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="AZ — Digital Engineering System" />
+    <meta property="og:description" content="Маркетинг, аналитика, автоматизация и AI для роста бизнеса" />
+    <meta property="og:type" content="website" />
 
-    <meta
-        name="description"
-        content="Системный интернет-маркетинг, аналитика, автоматизация и современные технологии для роста бизнеса.">
+    <!-- Favicon (пока заглушка, потом сделаем AZ logo SVG) -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 
-    <link
-        rel="icon"
-        href="/favicon.svg">
+    <!-- Fonts preconnect (ускорение) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com">
+    <!-- Prevent flash of unstyled content -->
+    <style>
+      html {
+        background: #0b0f14;
+      }
+    </style>
+  </head>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+  <body>
+    <!-- React root -->
+    <div id="root"></div>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <link
-        rel="stylesheet"
-        href="/src/styles/reset.css">
-
-    <link
-        rel="stylesheet"
-        href="/src/styles/variables.css">
-
-    <link
-        rel="stylesheet"
-        href="/src/styles/global.css">
-
-</head>
-
-<body>
-
-    <div id="app"></div>
-
-    <script
-        type="module"
-        src="/src/main.js"></script>
-
-</body>
-
+    <!-- IMPORTANT: Vite entry -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
