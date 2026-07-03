@@ -1,0 +1,82 @@
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    backdrop-filter: blur(18px);
+    background: rgba(13,13,13,0.55);
+
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* container */
+.header__container {
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo */
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    gap: 36px;
+}
+
+.nav a {
+    font-size: 14px;
+    color: var(--muted);
+    position: relative;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+/* CTA button */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 22px;
+    border-radius: 999px;
+
+    background: var(--accent);
+    color: #000;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    transition: all .25s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(200,169,106,0.15);
+}
+
+/* secondary button */
+.button--secondary {
+    background: transparent;
+    color: #fff;
+
+    border: 1px solid rgba(255,255,255,0.14);
+}
+
+.button--secondary:hover {
+    border-color: rgba(255,255,255,0.3);
+}

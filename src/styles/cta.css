@@ -1,0 +1,39 @@
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    padding: 160px 0;
+}
+
+.cta__box {
+    padding: 60px;
+    text-align: center;
+
+    background: radial-gradient(
+        circle at top,
+        rgba(200,169,106,0.08),
+        transparent 60%
+    );
+
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: var(--radius);
+}
+
+.cta__box h2 {
+    font-size: 44px;
+    margin-bottom: 16px;
+}
+
+.cta__box p {
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 32px;
+}
+
+.cta__buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}

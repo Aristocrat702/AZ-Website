@@ -1,0 +1,49 @@
+/* =========================
+   CASES
+========================= */
+
+.cases {
+    padding: 140px 0;
+}
+
+.cases__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 60px;
+}
+
+.case {
+    padding: 28px;
+
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: var(--radius);
+
+    transition: 0.3s ease;
+}
+
+.case:hover {
+    transform: translateY(-4px);
+    border-color: rgba(200,169,106,0.25);
+}
+
+.case__tag {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--accent);
+    margin-bottom: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.case h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.case p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+}

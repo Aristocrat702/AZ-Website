@@ -1,0 +1,39 @@
+/* =========================
+   FAQ
+========================= */
+
+.faq {
+    padding: 140px 0;
+}
+
+.faq__list {
+    margin-top: 60px;
+    display: grid;
+    gap: 16px;
+}
+
+.faq__item {
+    padding: 24px 28px;
+
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: var(--radius);
+
+    transition: 0.3s ease;
+}
+
+.faq__item:hover {
+    border-color: rgba(200,169,106,0.25);
+    transform: translateY(-2px);
+}
+
+.faq__item h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.faq__item p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+}
