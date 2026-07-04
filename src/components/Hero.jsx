@@ -1,8 +1,19 @@
 export default function Hero() {
   return (
     <section className="hero">
-      <h1>AZ Marketing</h1>
-      <p>Система маркетинга и автоматизации бизнеса</p>
+      <div className="hero-content">
+        <h1>
+          AZ Marketing
+        </h1>
+
+        <p>
+          Яндекс Директ • Метрика • AI-автоматизация • Telegram-боты
+        </p>
+
+        <button className="btn">
+          Обсудить проект
+        </button>
+      </div>
     </section>
   );
 }

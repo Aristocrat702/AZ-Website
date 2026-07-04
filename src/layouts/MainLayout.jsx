@@ -1,9 +1,11 @@
 import Hero from "../components/Hero.jsx";
+import Services from "../components/Services.jsx";
 
 export default function MainLayout() {
   return (
-    <div className="app">
+    <div>
       <Hero />
+      <Services />
     </div>
   );
 }
