@@ -1,26 +1,20 @@
-import Hero from "../components/Hero";
-import "../styles/global.css";
+import Hero from "../components/Hero.jsx";
 
 export default function MainLayout() {
   return (
-    <div className="app">
-      <header className="header">
-        <div className="logo">AZ</div>
-
-        <nav>
-          <a href="#services">Услуги</a>
-          <a href="#cases">Кейсы</a>
-          <a href="#about">Обо мне</a>
-        </nav>
-
-        <button className="btn">Связаться</button>
-      </header>
-
+    <div style={styles.page}>
       <Hero />
-
-      <footer className="footer">
-        © AZ — Аркадий Жилкин
-      </footer>
     </div>
   );
 }
+
+const styles = {
+  page: {
+    margin: 0,
+    padding: 0,
+    minHeight: "100vh",
+    background: "#0b0f17",
+    color: "white",
+    fontFamily: "Arial, sans-serif",
+  },
+};

@@ -1,9 +1,5 @@
-import MainLayout from "./layouts/MainLayout";
+import MainLayout from "./layouts/MainLayout.jsx";
 
 export default function App() {
-  return (
-    <div>
-      <MainLayout />
-    </div>
-  );
+  return <MainLayout />;
 }

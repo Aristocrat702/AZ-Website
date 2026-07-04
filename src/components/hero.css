@@ -1,0 +1,95 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+  padding: 80px 20px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, #7c5cff33, transparent 40%),
+              radial-gradient(circle at 80% 80%, #00d4ff22, transparent 40%),
+              #0a0a0a;
+  filter: blur(0px);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 1000px;
+  text-align: center;
+  z-index: 2;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #ffffff22;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #ffffffcc;
+  backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+  font-size: 54px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #bdbdbd;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.primary {
+  background: linear-gradient(135deg, #7c5cff, #00d4ff);
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #ffffff33;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hero-stats div {
+  text-align: center;
+}
+
+.hero-stats b {
+  font-size: 22px;
+  display: block;
+}
+
+.hero-stats span {
+  font-size: 12px;
+  color: #999;
+}
